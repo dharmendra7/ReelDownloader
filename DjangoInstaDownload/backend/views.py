@@ -17,8 +17,8 @@ import instaloader
 from instaloader import Profile, Post
 
 # Create your views here.
-ACCOUNT_USERNAME =     "mrunal.shah.58"      # "solvederror081"
-ACCOUNT_PASSWORD =      'solved123'                        #"solved@123"
+ACCOUNT_USERNAME =     "********"     
+ACCOUNT_PASSWORD =      '******'      
 
 
 headerParam = [OpenApiParameter(
