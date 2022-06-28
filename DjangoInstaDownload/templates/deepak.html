@@ -1,0 +1,61 @@
+<form method="POST" action={% url 'deepak' %}>
+    {% csrf_token %}
+    <input type="hidden" name="_method" value="PATCH"> <input type="hidden" name="_token"
+        value="O8oTZWjHgd4XbXUnqQ28jji3HAq9eOjlTVAEsemh">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="js-android-version">Android Version</label>
+
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fab fa-android"></i></span>
+                        </div>
+                        <input type="text" name="android[version]" class="form-control " id="js-android-versions"
+                            placeholder="Enter Android Version" value="0.0.0">
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="js-android-force-update">Force Update</label>
+                    <div class="input-group">
+                        <input type="checkbox" id="js-android-force-updates" name="androidforce" data-bootstrap-switch
+                            data-off-color="danger" data-on-color="success" checked="true">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="js-ios-version">iOS Version</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fab fa-apple"></i></span>
+                        </div>
+                        <input type="text" name="ios[version]" class="form-control " id="js-ioss-version"
+                            placeholder="Enter iOS Version" value="0.0.0">
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="js-ios-force-update">Force Update</label>
+                    <div class="input-group">
+                        <input type="checkbox" id="js-ios-force-updates" name="iosforce" data-bootstrap-switch
+                            data-off-color="danger" data-on-color="success" checked="true">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.card-body -->
+    <span style="color:red">
+        {{ error }}
+    </span>
+    <div class="card-footer">
+        <button type="submit" class="btn btn-secondary w-100 border border-dark">Submit</button>
+    </div>
+</form>

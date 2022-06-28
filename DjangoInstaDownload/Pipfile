@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+instaloader = "*"
+django = "*"
+drf-spectacular = "*"
+djangorestframework = "*"
+drf-spectacular-sidecar = "*"
+beautifulsoup4 = "*"
+selenium = "*"
+webdriver-manager = "*"
+pandas = "*"
+instagrapi = "*"
+pillow = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
